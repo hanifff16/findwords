@@ -40,7 +40,7 @@ int main()
     }
     or(int m=0; m<xy; m++) {
           nilai[m]=0;
-          int pk = vertikal[m], x=0;
+          int pk = vertical[m], x=0;
           bool ada[pk], result;
 
           for(int r = 0 ; r < 15 ; r++){
