@@ -56,3 +56,23 @@ bool searchHorizontal(char input[]){
     
     return false;
 }
+bool searchReverseHorizontal(char input[]){ 
+	char *temp;
+	char kata[15]; 
+	
+	for (int i = 0; i < 15; i++)
+    {
+    	for(int j = 0; j < 15; j++){
+	    	kata[j] = words[i][j]; 
+		}
+		
+	    reverse(kata, kata + strlen(kata)); 
+	    temp = strstr(kata, input); 
+        
+	    if(temp != NULL){ 
+	        return true; 
+	    }
+    }
+    
+    return false;
+}
