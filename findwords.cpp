@@ -52,5 +52,24 @@ int main()
                       else ada[x] = 0;
                       x++;
                   }
+               for(int k=0; k<pk;
+                k++) {
+                    if(ada[k]==1) {
+                        result = 1;
+                        nilai[m]+=result;
+                    }
+                else {
+                    result = 0;
+                    break;
+                    }
+                    if(nilai[m]==pk) {
+                        fix[m]=1;
+                        goto next;
+                    }
+                }
+                nilai[m]=0;
+                x=0;
+            }
+        }
     return 0;
 }
