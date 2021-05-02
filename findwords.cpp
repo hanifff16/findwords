@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cstring>
+#include <algorithm>
 
 using namespace std;
 const int cols = 16, rows = 15;
