@@ -108,7 +108,7 @@ bool searchReverseVertical(char input[]){
             kata[j] = words[j][i];
         }
         
-        reverse(kata, kata + strlen); 
+        reverse(kata, kata + strlen(kata,kata); 
         temp = strstr(kata, input);
 
         if(temp != NULL){
