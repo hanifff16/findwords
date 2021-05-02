@@ -38,4 +38,20 @@ int main()
         else 
             cout << "Tidak Ada\n";
     }
+ return 0;
+}
+
+bool searchHorizontal(char input[]){
+	char *temp;
+	
+	for (int i = 0; i < 15; i++)
+    {
+        temp = strstr(words[i], input);
+        
+	    if(temp != NULL){
+	        return true;
+	    }
+    }
+    
+    return false;
 }
