@@ -28,20 +28,6 @@ bool searchHorizontal(char *);
 
 int main()
 {
- or(int m=0; m<xy; m++) {
-        nilai[m]=0;
-        int pk = vertikal[m], x=0;
-        bool ada[pk], result;
-
-        for(int r = 0 ; r < 15 ; r++){
-            for(int a=0; a<=(15-pk);
-            a++) {
-                for(int b=a; b<=a+(pk-1);
-                b++) {
-                    if(((Y+r)+b) == kata[m][x]) ada[x] = 1;
-                    else ada[x] = 0;
-                    x++;
-                }
     char word[16];
     int n;
     cin>>n;
@@ -52,5 +38,19 @@ int main()
         else 
             cout << "Tidak Ada\n";
     }
+    or(int m=0; m<xy; m++) {
+          nilai[m]=0;
+          int pk = vertikal[m], x=0;
+          bool ada[pk], result;
+
+          for(int r = 0 ; r < 15 ; r++){
+              for(int a=0; a<=(15-pk);
+              a++) {
+                  for(int b=a; b<=a+(pk-1);
+                  b++) {
+                      if(((Y+r)+b) == kata[m][x]) ada[x] = 1;
+                      else ada[x] = 0;
+                      x++;
+                  }
     return 0;
 }
