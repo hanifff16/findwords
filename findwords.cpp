@@ -38,38 +38,4 @@ int main()
         else 
             cout << "Tidak Ada\n";
     }
-    for(int m=0; m<xy; m++) {
-          nilai[m]=0;
-          int pk = vertical[m], x=0;
-          bool ada[pk], result;
-
-          for(int r = 0 ; r < 15 ; r++){
-              for(int a=0; a<=(15-pk);
-              a++) {
-                  for(int b=a; b<=a+(pk-1);
-                  b++) {
-                      if(((Y+r)+b) == kata[m][x]) ada[x] = 1;
-                      else ada[x] = 0;
-                      x++;
-                  }
-               for(int k=0; k<pk;
-                k++) {
-                    if(ada[k]==1) {
-                        result = 1;
-                        nilai[m]+=result;
-                    }
-                else {
-                    result = 0;
-                    break;
-                    }
-                    if(nilai[m]==pk) {
-                        fix[m]=1;
-                        goto next;
-                    }
-                }
-                nilai[m]=0;
-                x=0;
-            }
-        }
-    return 0;
 }
