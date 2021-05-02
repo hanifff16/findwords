@@ -38,7 +38,7 @@ int main()
         else 
             cout << "Tidak Ada\n";
     }
-    or(int m=0; m<xy; m++) {
+    for(int m=0; m<xy; m++) {
           nilai[m]=0;
           int pk = vertical[m], x=0;
           bool ada[pk], result;
